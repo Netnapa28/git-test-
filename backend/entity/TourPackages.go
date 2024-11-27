@@ -6,7 +6,7 @@ import (
 
 type TourPackages struct {
 	gorm.Model
-	TourName	string
+	TourName	string `json:"tour_name"`
 	PackageCode	string
 	Duration	string
 

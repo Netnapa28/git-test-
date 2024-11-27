@@ -67,7 +67,9 @@ func main() {
 
 		// TourPackages
 		router.GET("/tour-packages", controllers.ListTourPackages)
-		router.GET("/tour-package/:id", controllers.GetTourPackageByID)
+
+		router.GET("/tour-package/:id", controllers.GetTourPackageByID)/**/
+		router.GET("/all-tour-packages", controllers.GetAllTourPackages)  /**/
 
 		// TourSchedule
 		router.GET("/tour-schedule/:id", controllers.GetTourScheduleByID)
